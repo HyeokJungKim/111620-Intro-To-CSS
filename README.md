@@ -5,14 +5,24 @@
 ### Qualities of good HTML/CSS
 
 What are some qualities of good HTML and CSS?
+-specifivity
+-sematic
+-oraganization
+-intutive
+-visually appealing
+-easy to read
+-clean and DRY code
+-consitent
+-responsive
+-accessible
 
 ### The Front End Team
 
 What's the difference between designers and developers?
 
-Designer:
+Designer: Make the wireframes/Mockup
 
-Developer:
+Developer: Write CSS and code
 
 ### The CSS Ecosystem
 
