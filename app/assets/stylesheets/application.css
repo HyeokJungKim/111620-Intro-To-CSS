@@ -3,13 +3,38 @@ h1 {
   margin: 0px;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  background-color: white;
+  border: solid;
+  box-shadow: 1px 1px;
+}
+
+.nav-img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25vw;
+}
+
 .box {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 50vh;
-  width: 50vw;
+  height: 300px;
+  width: 300px;
   background-color: purple;
   border-radius: 50px;
   outline: black;
@@ -18,10 +43,26 @@ h1 {
   font-family: "Montserrat";
 }
 
-.box:hover {
+.radio {
+}
+
+/* .box:hover {
   background-color: green;
   font-family: "Roboto";
   transform: rotate(0.5turn);
+} */
+.rating > span:hover:before {
+  content: "\2605";
+  position: absolute;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
 }
 
 img {
@@ -30,11 +71,13 @@ img {
 }
 
 body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=640:*");
   height: 100vh;
   width: 100vw;
   background-size: 100% 100%;
-  opacity: 0.5;
 }
 
 /* h1 {
